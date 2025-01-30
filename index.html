@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Star - RDCongo</title>
+  <link rel="icon" type="image/x-icon" href="images/mockups2ico.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="banner">
+    <video autoplay muted playsinline class="background-video">
+      <source src="videos/It Star background vid.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact us</a></li>
+        <!-- <li><a href="#">FAQ</a></li> -->
+      </ul>
+      <div class="nav-right"><button>IT Star Academy 🎓</button></div>
+    </nav>
+    <!-- <h1>Boost your business with tailored IT solutions</h1> -->
+
+    <!-- <button class="cta-button">Start Today</button> -->
+  
+  </header>
+
+  <div id="chatbot">
+    <button id="chatbot-btn">💬</button>
+    <div id="chatbot-window" style="display: none;">
+        <iframe id="chatbot-frame" src="" width="300" height="400"></iframe>
+    </div>
+</div>
+
+
+<style>
+  #chatbot { position: fixed; bottom: 300px; right: 20px; z-index: 4;}
+  #chatbot-btn { background-color: #007bff; color: white; border: none; border-radius: 50%; padding: 15px; cursor: pointer; }
+  #chatbot-window { position: fixed; bottom: 80px; right: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+
+</style> 
+
+  <!-- Who are us Section -->
+  <div class="about" id="about">
+    <div class="about-header">
+      <h2>About Us</h2>
+      <button class="toggle-btn">+</button>
+    </div>
+    <div class="open about-container">
+      <div class="about-text">
+        <p>
+          At <strong>IT Star</strong>, we believe in empowering businesses and individuals with cutting-edge technology solutions. 
+          Founded with a passion for innovation, we specialize in delivering customized services to meet the unique needs of our clients.
+        </p>
+        <h3>Who We Are</h3>
+        <p>
+          We are a team of dedicated IT professionals offering:
+        </p>
+        <ul>
+          <li><strong>Website Development:</strong> Sleek portfolios to robust e-commerce platforms.</li>
+          <li><strong>Mobile Applications:</strong> User-friendly apps for Android and iOS.</li>
+          <li><strong>SEO & Digital Marketing:</strong> Helping your business get noticed.</li>
+          <li><strong>Cybersecurity Solutions:</strong> Protecting your data and infrastructure.</li>
+          <li><strong>Custom IT Solutions:</strong> Tailored to your business processes and goals.</li>
+        </ul>
+        <h3>Our Mission</h3>
+        <p>
+          To simplify technology and make it accessible to everyone, ensuring your business stays ahead in today’s fast-paced digital world.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/fond_header.webp" alt="Our Team" />
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <h2>Our Services</h2>
+    <div class="service-items">
+      <div class="service">
+        <img src="images/Websitelogo.png" alt="Website Creation">
+        <h3>Web Development</h3>
+        <p>Beautiful and responsive websites and webapps for your business.</p>
+      </div>
+      <div class="service">
+        <img src="images/Mobilelogo.png" alt="Mobile Creation">
+        <h3>Mobile Development</h3>
+        <p>Beautiful and responsive applications for mobiles in a time where everyone has a smartphone.</p>
+      </div>
+      <div class="service">
+        <img src="images/SEOlogo.png" alt="SEO Optimization">
+        <h3>SEO Optimization</h3>
+        <p>Rank higher and attract more clients online.</p>
+      </div>
+      <div class="service">
+        <img src="images/Cloudlogo.png" alt="Cloud Managing">
+        <h3>Cloud Solutions</h3>
+        <p>Deploy your project from everywhere to everywhere.</p>
+      </div>
+      <div class="service">
+        <img src="images/Ailogo.png" alt="AI and Data Services">
+        <h3>AI & Data</h3>
+        <p>Examine your data in order to find some patterns or logic.</p>
+      </div>
+      <div class="service">
+        <img src="images/Cyberseclogo.png" alt="Cybersecurity">
+        <h3>Cyber Security</h3>
+        <p>Security placement, test and audits, in order to securise your data with combination with data sciences .</p>
+      </div>
+      <div class="service">
+        <img src="images/Cryptologo.png" alt="Crypto">
+        <h3>Crypto and blockchains</h3>
+        <p>Custom apps tailored to your needs.</p>
+      </div>
+      <div class="service">
+        <img src="images/Infographylogo.png" alt="Infography">
+        <h3>Infography/Production Services</h3>
+        <p>Picture montage, video editing, logos, poster.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing">
+    <video autoplay muted loop playsinline class="background-video">
+      <source src="videos/fondespace.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas les vidéos HTML5.
+    </video>
+    <h2>Web Promotions</h2>
+    <div class="pricing-plans">
+      <div class="plan">
+        <h3>Web Presentation</h3>
+        <p class="price">From <span>$120</span></p>
+        <ul>
+          <li>Landing-page website</li>
+          <li>Advanced SEO</li>
+          <li>1-year support</li>
+        </ul>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get Started</button>
+      </div>
+      <div class="plan highlighted">
+        <h3>Pro</h3>
+        <p class="price">From <span>$350</span></p>
+        <ul>
+          <li>Multi-page website</li>
+          <li>JS/Python server</li>
+          <li>Online services</li>
+          <li>Advanced SEO</li>
+          <li>1-year support</li>
+        </ul>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Get Started</button>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <p class="price">From <span>$1000</span></p>
+        <ul>
+          <li>Fully customized website</li>
+          <li>Cloud services</li>
+          <li>Marketplace creation</li>
+          <li>Online services</li>
+          <li>JS/Python server</li>
+          <li>Online services</li>
+          <li>Premium SEO</li>
+          <li>5-year support</li>
+        </ul>
+        <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact Us</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div>
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="contact">Email/Tel :</label>
+      <input type="text" id="contact" name="text" required>
+
+      <label for="subject">Subject :</label>
+      <input type="text" id="subject" name="subject" required>
+      
+      <label for="message">Message :</label>
+      <textarea type="test" id="message" name="message" required></textarea>
+      
+      <button type="submit">Envoyer</button>
+    </form></div>
+    
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>IT Star - RDCongo</h2>
+            <p>Innovative IT solutions for individuals and businesses.</p>
+        </div>
+        <div class="footer-links">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: contact@itstar-rdc.com</p>
+            <p>Phone: +243 970 000 000</p>
+            <p>Kinshasa, DRC</p>
+        </div>
+        <div class="footer-social">
+            <h3>Suivez-nous</h3>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 IT Star - RDCongo. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<style>
+.footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-logo, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin: 8px 0;
+}
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.footer-social a:hover {
+    color: #007bff;
+}
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+</style>
+
+  <script>
+    // Apparition des sections avec effet apaisant
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    window.addEventListener('scroll', function() {
+  const nav = document.querySelector('nav');
+  const headerHeight = document.querySelector('header').offsetHeight;
+  
+  if (window.scrollY > headerHeight-12) {
+    nav.classList.add('solid');
+  } else {
+    nav.classList.remove('solid');
+  }
+});
+  </script>
+  <script src="script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+  <script>
+    (function () {
+      emailjs.init("0itHGT0RE2JJZzn8U"); // Remplace par ta Public Key (API)
+    })();
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</body>
+</html>
