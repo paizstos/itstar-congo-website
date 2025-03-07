@@ -112,15 +112,15 @@ nav ul li a:hover {
 
 section {
   padding: 4rem 2rem;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(40px);
   transition: opacity 1.5s ease, transform 3.5s ease;
-}
+/*}
 
 section.visible {
   opacity: 1;
   transform: translateY(0);
-}
+*/}
 
 .cta-button {
   all: unset;
