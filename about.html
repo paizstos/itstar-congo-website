@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - IT Star Congo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #1a1a1a;
+        color: white;
+      }
+      
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 15px;
+      }
+      
+      .nav-links a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      .nav-right button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      
+      .burger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background: #1a1a1a;
+          width: 100%;
+          padding: 10px 0;
+        }
+        .nav-links.active {
+          display: flex;
+        }
+        .burger {
+          display: block;
+        }
+        .nav-right {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header class="banner23">
+        <h1>À Propos de IT Star Congo</h1>
+        <nav>
+            <div class="burger" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact us</a></li>
+              <!-- <li><a href="#">FAQ</a></li> -->
+            </ul>
+            <div class="nav-right"><button>IT Star Academy 🎓</button></div>
+          </nav>
+          <h2>Boost your business with tailored IT solutions</h2> 
+      
+          <button class="cta-button">Start Today</button>
+    </header>
+    
+    <section class="portfolio">
+        <h2>Nos Projets</h2>
+        
+        <div class="portfolio-itemes">
+            <div class="scroll-container">
+            <div class="portfolio-iteme">
+                <p class = "date">2023</p>
+                <img src="images/logo_test_officiel.PNG" alt="Projet 1">
+                <p>Nom du projet 1</p>
+                <a class= "voirsite" href="sitekbarbhairtest">Voir le site</a>
+            </div>
+            <div class="portfolio-iteme">
+                <p class = "date">2023</p>
+                <img src="images/kbarbhair_logo.png" alt="Site de test pour Kbarb'hair">
+                <p>Kbarb'Hair</p>
+                <a class= "voirsite" href="sitekbarbhairtest.com">Voir le site</a>
+            </div>
+            <div class="portfolio-iteme">
+                <p class = "date">2023</p>
+                <img src="images/logo it star 1.webp" alt="Projet 3">
+                <p>Nom du projet 3</p>
+                <a class= "voirsite" href="sitekbarbhairtest">Voir le site</a>
+            </div>
+            <div class="portfolio-iteme">
+                <p class = "date">2023</p>
+                <img src="images/logo_test_officiel.PNG" alt="Projet 1">
+                <p>Nom du projet 1</p>
+                <a class= "voirsite" href="sitekbarbhairtest">Voir le site</a>
+            </div>
+            <!-- Ajoute d'autres projets ici -->
+        </div>
+    </div>
+    </section>
+    
+    <section class="aboutez">
+        <h2>Qui sommes-nous ?</h2>
+        <p>IT Star Congo est une entreprise spécialisée dans les solutions informatiques pour particuliers et entreprises. Nous avons également une plateforme en ligne d'enseignement permettant aux Congolais d'apprendre dans divers domaines informatiques et autres, afin de lutter contre l'ignorance et promouvoir l'instruction.</p>
+    </section>
+    
+    <section class="services">
+        <h2>Nos Services</h2>
+        <div class="service-items">
+            <div class="service">
+                <h3>IT Star Academy</h3>
+                <p>Plateforme d'apprentissage en ligne</p>
+            </div>
+            <div class="service">
+                <h3>IT Star Crypto</h3>
+                <p>Plateforme pour acheter, envoyer et recevoir des bitcoins, ainsi que notre crypto Bonobo</p>
+            </div>
+            <div class="service">
+                <h3>IT Star Wenze</h3>
+                <p>Marketplace pour les vendeurs et acheteurs en ligne</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>IT Star - RDCongo</h2>
+                <p>Innovative IT solutions for individuals and businesses.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: contact@itstar-rdc.com</p>
+                <p>Phone: +243 970 000 000</p>
+                <p>Kinshasa, DRC</p>
+            </div>
+            <div class="footer-social">
+                <h3>Suivez-nous</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 IT Star - RDCongo. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+          document.querySelector('.nav-links').classList.toggle('active');
+        }
+      </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .footer-logo, .footer-links, .footer-contact, .footer-social {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links ul li {
+            margin: 8px 0;
+        }
+        .footer-links ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .footer-links ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-social a {
+            color: white;
+            font-size: 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .footer-social a:hover {
+            color: #007bff;
+        }
+        .footer-bottom {
+            margin-top: 10px;
+            font-size: 14px;
+            border-top: 1px solid #444;
+            padding-top: 10px;
+        }
+        </style>
+</body>
+</html>

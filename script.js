@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     console.error("Formulaire non trouvé : Vérifiez l'ID 'contactForm' dans le DOM.");
   }
+  
 
   // Chatbot
   const chatbotButton = document.getElementById('chatbot-btn');
@@ -75,6 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.querySelector(".scroll-container");
+
+  container.addEventListener("wheel", function (event) {
+      event.preventDefault();
+      container.scrollLeft += event.deltaY;
+  });
+});
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const aboutSection = document.querySelector('.about');

@@ -6,6 +6,68 @@
   <title>IT Star - RDCongo</title>
   <link rel="icon" type="image/x-icon" href="images/mockups2ico.ico">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #1a1a1a;
+      color: white;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+    
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .nav-right button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .burger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #1a1a1a;
+        width: 100%;
+        padding: 10px 0;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .burger {
+        display: block;
+      }
+      .nav-right {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header Section -->
@@ -16,10 +78,11 @@
     </video>
     
     <nav>
-      <ul>
+      <div class="burger" onclick="toggleMenu()">&#9776;</div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="#contact">Contact us</a></li>
         <!-- <li><a href="#">FAQ</a></li> -->
       </ul>
@@ -31,12 +94,12 @@
   
   </header>
 
-  <div id="chatbot">
+   <div id="chatbot">
     <button id="chatbot-btn">💬</button>
     <div id="chatbot-window" style="display: none;">
         <iframe id="chatbot-frame" src="" width="300" height="400"></iframe>
     </div>
-</div>
+  </div>
 
 
 <style>
@@ -197,6 +260,11 @@
         <p>&copy; 2025 IT Star - RDCongo. Tous droits réservés.</p>
     </div>
 </footer>
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
 
 <style>
 .footer {
